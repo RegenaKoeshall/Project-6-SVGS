@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+}
+
+#container {
+  max-width: 90%;
+  background: #fff;
+  margin: 0 auto;
+}
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+  }
+  a:hover {
+    color: #111;
+  }
+.st0:hover {
+  fill: #111;
+}
+
+#Layer_1,
+#Layer_2,
+#Layer_3 {
+    height: 13px;
+}
+
+header {
+  padding-top: 10px;
+}
+  header nav {
+    padding-bottom: 50px;
+    text-align: left;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  header h1 {
+    line-height: 1em;
+  }
+
+main {
+  padding-top: 50px;
+}
+  main h2 {
+  font-size: 28px;
+}
+  main ul {
+    padding-left: 10%;
+  }
+    main li {
+      display: block;
+      color: #ba8058;
+      margin-right: 20px;
+      float: left;
+      width: 20%;
+    }
+      main li img {
+        margin-bottom: 15px;
+      }
+      main li span {
+        margin-left: -40px;
+      }
+      main li:last-child {
+        margin-right: 0;
+      }
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+/*******classes*******/
+
+.graphic-background {
+  background: url('../svgs/background.svg') #edeff0; 
+ background-size: 50px;
+
+}
+.logo {
+  margin: 1em auto;
+  width: 20%;
+}
+.paw h1 {
+  display: none;
+}
+
+/*******animation*******/
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1.3);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+}
+
+#Layer_4 {
+  animation: grow 2s ease-out backwards;
+}
+
+/*******clearfix*******/
+
+.clearfix::after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+
+/*******media*******/
+
+@media only screen and (max-width: 420px) {
+  
+  #container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .logo {
+    width: 50%;
+  }
+  .logo-text {
+ display: none;
+  }
+  .paw h1 {
+    display: block;
+   
+    text-align: center;
+    font-size: 1.5em;
+     color: #EAAA7F;
+   
+  }
+
+}
